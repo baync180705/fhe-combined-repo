@@ -1,4 +1,4 @@
-FROM rust:1.81-slim-bookworm AS ppml-builder
+FROM rust:1.91-slim-bookworm AS ppml-builder
 
 WORKDIR /build
 
