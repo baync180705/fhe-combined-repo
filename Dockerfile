@@ -18,6 +18,8 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PPML_DATASET_ENCRYPTOR_BIN=/usr/local/bin/encrypt_dataset \
     PPML_DATASET_KEY_CACHE=/app/PPML/.cache/dataset_keys_q16f8.bin
 
+ENV PYTHONPATH=/app
+
 WORKDIR /app
 
 RUN apt-get update \
@@ -35,8 +37,8 @@ COPY --from=ppml-builder /build/PPML/target/release/verify_dataset /usr/local/bi
 
 RUN mkdir -p /app/PPML/.cache
 
-WORKDIR /app/blindinference/backend
+WORKDIR /app
 
 EXPOSE 8000
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "blindinference.backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
