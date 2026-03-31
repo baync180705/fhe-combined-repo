@@ -1,0 +1,10 @@
+fastapi
+motor
+python-dotenv
+python-multipart>=0.0.9
+uvicorn
+anyio>=4.5.0
+cryptography>=42.0.8,<45
+pydantic~=2.10.4
+PyJWT>=2.8.0,<3
+eth-account>=0.13.4,<1

@@ -1,0 +1,8 @@
+{
+  "name": "Diabetes Risk Logistic v1",
+  "scale": 1000,
+  "features": ["glucose", "bmi", "age"],
+  "weights": [150, 210, 55],
+  "bias": 500,
+  "metadataUri": "ipfs://diabetes-risk-logistic-v1"
+}

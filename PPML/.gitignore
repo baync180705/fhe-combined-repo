@@ -1,0 +1,27 @@
+target/
+.cache
+.cargo
+
+# Rust workspace artifacts
+**/*.rs.bk
+
+# Environment and local tooling
+.env
+.env.*
+.venv/
+fhe_keys.bin
+fhenix_weights.bin
+fhenix_bias.bin
+
+# Editor/OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+__pycache__/
+
+# Hardhat / Node build artifacts
+fhenix_inference/node_modules/
+fhenix_inference/artifacts/
+fhenix_inference/cache/
+fhenix_inference/.env
